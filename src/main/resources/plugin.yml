@@ -1,0 +1,4 @@
+name: HiddenCoins
+version: '1.0'
+main: com.Lino.hiddenCoins.HiddenCoins
+api-version: '1.21'
