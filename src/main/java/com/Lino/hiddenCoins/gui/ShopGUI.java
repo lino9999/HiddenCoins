@@ -2,7 +2,7 @@ package com.Lino.hiddenCoins.gui;
 
 import com.Lino.hiddenCoins.HiddenCoins;
 import com.Lino.hiddenCoins.shop.ShopItem;
-import net.md_5.bungee.api.ChatColor;
+import com.Lino.hiddenCoins.managers.MessageManager;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -28,8 +28,9 @@ public class ShopGUI {
         this.player = player;
         this.items = new HashMap<>();
 
-        String title = ChatColor.translateAlternateColorCodes('&',
-                plugin.getConfigManager().getGuiTitle());
+        String title = plugin.getConfigManager().getGuiTitle();
+        title = plugin.getMessageManager().colorize(title);
+
         int size = plugin.getConfigManager().getGuiSize();
 
         this.inventory = Bukkit.createInventory(null, size, title);
@@ -46,8 +47,8 @@ public class ShopGUI {
 
     private void fillBackground() {
         Material material = plugin.getConfigManager().getDecorationMaterial();
-        String name = ChatColor.translateAlternateColorCodes('&',
-                plugin.getConfigManager().getDecorationName());
+        String name = plugin.getConfigManager().getDecorationName();
+        name = plugin.getMessageManager().colorize(name);
 
         ItemStack decoration = new ItemStack(material);
         ItemMeta meta = decoration.getItemMeta();
@@ -95,7 +96,8 @@ public class ShopGUI {
             String name = plugin.getMessageManager().getMessage("gui.info.name", placeholders);
             List<String> lore = new ArrayList<>();
 
-            for (String line : plugin.getMessageManager().getMessage("gui.info.lore", placeholders).split("\n")) {
+            String loreText = plugin.getMessageManager().getMessage("gui.info.lore", placeholders);
+            for (String line : loreText.split("\n")) {
                 lore.add(line);
             }
 
@@ -112,13 +114,13 @@ public class ShopGUI {
         ItemMeta meta = display.getItemMeta();
 
         if (meta != null) {
-            String name = ChatColor.translateAlternateColorCodes('&', item.getName());
+            String name = plugin.getMessageManager().colorize(item.getName());
             List<String> lore = new ArrayList<>();
 
             for (String line : item.getLore()) {
                 line = line.replace("{price}", plugin.getVaultManager().formatMoney(item.getMoneyPrice()));
                 line = line.replace("{coins}", String.valueOf(item.getCoinAmount()));
-                lore.add(ChatColor.translateAlternateColorCodes('&', line));
+                lore.add(plugin.getMessageManager().colorize(line));
             }
 
             meta.setDisplayName(name);
@@ -134,12 +136,12 @@ public class ShopGUI {
         ItemMeta meta = display.getItemMeta();
 
         if (meta != null) {
-            String name = ChatColor.translateAlternateColorCodes('&', item.getName());
+            String name = plugin.getMessageManager().colorize(item.getName());
             List<String> lore = new ArrayList<>();
 
             for (String line : item.getLore()) {
                 line = line.replace("{price}", String.valueOf(item.getCoinAmount()));
-                lore.add(ChatColor.translateAlternateColorCodes('&', line));
+                lore.add(plugin.getMessageManager().colorize(line));
             }
 
             meta.setDisplayName(name);
@@ -190,7 +192,7 @@ public class ShopGUI {
     private void handleItemPurchase(ShopItem item) {
         if (plugin.getCoinsManager().purchaseWithCoins(player, item.getId(), item.getCoinAmount())) {
             Map<String, String> placeholders = new HashMap<>();
-            placeholders.put("{item}", ChatColor.stripColor(item.getName()));
+            placeholders.put("{item}", MessageManager.stripColors(item.getName()));
             placeholders.put("{price}", String.valueOf(item.getCoinAmount()));
 
             if (item.hasCommand()) {
