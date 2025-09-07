@@ -1,0 +1,54 @@
+prefix: "<gradient:#FFD700:#FFA500>[HiddenCoins]</gradient> "
+
+no-permission: "{prefix}&cNon hai il permesso per eseguire questo comando!"
+
+gui:
+  info:
+    name: "<gradient:#00FF00:#00AA00>Le tue Informazioni</gradient>"
+    lore: |
+      
+      &8► &7Giocatore: &e{player}
+      
+      &8► &7Saldo: &a{balance}
+      &8► &7HiddenCoins: &b{coins}
+      
+      &7Usa le tue coins per
+      &7acquistare oggetti speciali!
+
+purchase:
+  coins:
+    success: "{prefix}&aHai acquistato con successo &e{amount} HiddenCoins &aper &2{price}&a!"
+    insufficient-money: "{prefix}&cNon hai abbastanza soldi per questo acquisto!"
+
+  item:
+    success: "{prefix}&aHai acquistato con successo &e{item} &aper &b{price} HiddenCoins&a!"
+    insufficient-coins: "{prefix}&cNon hai abbastanza HiddenCoins per questo acquisto!"
+    already-owned: "{prefix}&cPossiedi già questo oggetto!"
+
+errors:
+  player-only: "&cQuesto comando può essere eseguito solo da un giocatore!"
+  invalid-amount: "{prefix}&cImporto non valido! Usa un numero positivo."
+  player-not-found: "{prefix}&cGiocatore non trovato!"
+  invalid-syntax: "{prefix}&cSintassi non valida! Usa: {syntax}"
+
+admin:
+  reload:
+    success: "{prefix}&aConfigurazione ricaricata con successo!"
+
+  coins:
+    set: "{prefix}&aHai impostato le HiddenCoins di &e{player} &aa &b{amount}&a!"
+    add: "{prefix}&aHai aggiunto &b{amount} HiddenCoins &aa &e{player}&a!"
+    remove: "{prefix}&aHai rimosso &b{amount} HiddenCoins &ada &e{player}&a!"
+    check: "{prefix}&e{player} &7ha &b{amount} HiddenCoins&7!"
+
+  reset:
+    success: "{prefix}&aHai resettato le HiddenCoins di &e{player}&a!"
+    all: "{prefix}&aHai resettato le HiddenCoins di tutti i giocatori!"
+
+notifications:
+  coins-received: "{prefix}&aHai ricevuto &b{amount} HiddenCoins&a!"
+  coins-removed: "{prefix}&cTi sono state rimosse &b{amount} HiddenCoins&c!"
+
+confirmations:
+  purchase: "&7Sei sicuro di voler acquistare &e{item}&7? &a[CONFERMA] &c[ANNULLA]"
+  reset: "&cSei sicuro di voler resettare le tue HiddenCoins? Questa azione è irreversibile!"

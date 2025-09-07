@@ -2,3 +2,23 @@ name: HiddenCoins
 version: '1.0'
 main: com.Lino.hiddenCoins.HiddenCoins
 api-version: '1.21'
+author: Lino
+description: Sistema di valuta personalizzata con negozio GUI
+depend: [Vault]
+
+commands:
+  negozio:
+    description: Apre il negozio HiddenCoins
+    usage: /<command>
+    aliases: [shop, store]
+
+permissions:
+  hiddencoins.shop:
+    description: Permesso per usare il negozio
+    default: true
+  hiddencoins.admin:
+    description: Permesso amministratore
+    default: op
+    children:
+      hiddencoins.shop: true
+      hiddencoins.reload: true

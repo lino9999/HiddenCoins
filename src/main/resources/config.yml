@@ -1,0 +1,151 @@
+gui:
+  title: "<gradient:#FFD700:#FFA500>Negozio HiddenCoins</gradient>"
+  size: 54
+  decoration:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+
+coin-packages:
+  small:
+    name: "<gradient:#90EE90:#32CD32>Pacchetto Piccolo</gradient>"
+    lore:
+      - ""
+      - "&7Acquista &e100 HiddenCoins"
+      - ""
+      - "&8► &7Prezzo: &a{price}"
+      - ""
+      - "&eClicca per acquistare!"
+    material: GOLD_NUGGET
+    slot: 20
+    price: 1000.0
+    coins: 100
+
+  medium:
+    name: "<gradient:#87CEEB:#4682B4>Pacchetto Medio</gradient>"
+    lore:
+      - ""
+      - "&7Acquista &e500 HiddenCoins"
+      - "&7&o(Risparmia il 10%)"
+      - ""
+      - "&8► &7Prezzo: &a{price}"
+      - ""
+      - "&eClicca per acquistare!"
+    material: GOLD_INGOT
+    slot: 22
+    price: 4500.0
+    coins: 500
+
+  large:
+    name: "<gradient:#DA70D6:#8B008B>Pacchetto Grande</gradient>"
+    lore:
+      - ""
+      - "&7Acquista &e1000 HiddenCoins"
+      - "&7&o(Risparmia il 20%)"
+      - ""
+      - "&8► &7Prezzo: &a{price}"
+      - ""
+      - "&eClicca per acquistare!"
+    material: GOLD_BLOCK
+    slot: 24
+    price: 8000.0
+    coins: 1000
+
+shop-items:
+  elite:
+    name: "<gradient:#FFD700:#FF6347>Ruolo Elite</gradient>"
+    lore:
+      - ""
+      - "&7Ottieni il ruolo &6Elite"
+      - "&7nel server!"
+      - ""
+      - "&8► &7Vantaggi:"
+      - "&8• &e/fly &7nel mondo principale"
+      - "&8• &eKit Elite &7settimanale"
+      - "&8• &eTag speciale &7in chat"
+      - ""
+      - "&8► &7Prezzo: &b{price} HiddenCoins"
+      - ""
+      - "&eClicca per acquistare!"
+    material: DIAMOND
+    slot: 30
+    coin-price: 500
+    permission: group.elite
+    command: "lp user {player} parent add elite"
+
+  elite-plus:
+    name: "<gradient:#FF1493:#4B0082>Ruolo Elite+</gradient>"
+    lore:
+      - ""
+      - "&7Ottieni il ruolo &dElite+"
+      - "&7nel server!"
+      - ""
+      - "&8► &7Vantaggi:"
+      - "&8• &eTutti i vantaggi Elite"
+      - "&8• &e/god &7modalità dio"
+      - "&8• &eKit Elite+ &7giornaliero"
+      - "&8• &eAccesso a &d/warp vip"
+      - "&8• &eTag animato &7in chat"
+      - ""
+      - "&8► &7Prezzo: &b{price} HiddenCoins"
+      - ""
+      - "&eClicca per acquistare!"
+    material: NETHERITE_INGOT
+    slot: 32
+    coin-price: 1500
+    permission: group.eliteplus
+    command: "lp user {player} parent add eliteplus"
+
+  fly-30days:
+    name: "<gradient:#87CEEB:#00BFFF>Fly 30 Giorni</gradient>"
+    lore:
+      - ""
+      - "&7Ottieni il permesso di volo"
+      - "&7per &b30 giorni!"
+      - ""
+      - "&8► &7Prezzo: &b{price} HiddenCoins"
+      - ""
+      - "&eClicca per acquistare!"
+    material: FEATHER
+    slot: 39
+    coin-price: 300
+    command: "lp user {player} permission settemp essentials.fly true 30d"
+
+  special-key:
+    name: "<gradient:#FF69B4:#FF1493>Chiave Speciale</gradient>"
+    lore:
+      - ""
+      - "&7Ottieni una &dChiave Speciale"
+      - "&7per aprire casse rare!"
+      - ""
+      - "&8► &7Prezzo: &b{price} HiddenCoins"
+      - ""
+      - "&eClicca per acquistare!"
+    material: TRIPWIRE_HOOK
+    slot: 41
+    coin-price: 200
+    command: "crates give {player} special 1"
+
+sounds:
+  open:
+    enabled: true
+    sound: BLOCK_CHEST_OPEN
+    volume: 0.5
+    pitch: 1.2
+
+  success:
+    enabled: true
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 0.7
+    pitch: 1.5
+
+  error:
+    enabled: true
+    sound: ENTITY_VILLAGER_NO
+    volume: 0.5
+    pitch: 0.8
+
+  click:
+    enabled: true
+    sound: UI_BUTTON_CLICK
+    volume: 0.3
+    pitch: 1.0
