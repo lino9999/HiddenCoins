@@ -10,10 +10,13 @@ import org.bukkit.entity.Player;
 public class NegozioCommand implements CommandExecutor {
 
     private final HiddenCoins plugin;
-    private final GUIListener guiListener;
+    private GUIListener guiListener;
 
     public NegozioCommand(HiddenCoins plugin) {
         this.plugin = plugin;
+    }
+
+    public void setupListener() {
         this.guiListener = new GUIListener(plugin);
         plugin.getServer().getPluginManager().registerEvents(guiListener, plugin);
     }

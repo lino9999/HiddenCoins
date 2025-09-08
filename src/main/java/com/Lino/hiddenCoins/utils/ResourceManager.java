@@ -46,7 +46,7 @@ public class ResourceManager {
 
     private String getDefaultConfig() {
         return "gui:\n" +
-                "  title: \"<gradient:#FFD700:#FFA500>Negozio HiddenCoins</gradient>\"\n" +
+                "  title: \"<gradient:#FFD700:#FFA500>✨ Negozio HiddenCoins ✨</gradient>\"\n" +
                 "  size: 54\n" +
                 "  decoration:\n" +
                 "    material: BLACK_STAINED_GLASS_PANE\n" +
@@ -56,11 +56,11 @@ public class ResourceManager {
                 "    name: \"<gradient:#90EE90:#32CD32>Pacchetto Piccolo</gradient>\"\n" +
                 "    lore:\n" +
                 "      - \"\"\n" +
-                "      - \"&7Acquista &e100 HiddenCoins\"\n" +
+                "      - \"<gradient:#FFFFFF:#E0E0E0>Acquista</gradient> &e100 HiddenCoins\"\n" +
                 "      - \"\"\n" +
-                "      - \"&8► &7Prezzo: &a{price}\"\n" +
+                "      - \"<gradient:#FFD700:#FFA500>► Prezzo:</gradient> &a{price}\"\n" +
                 "      - \"\"\n" +
-                "      - \"&eClicca per acquistare!\"\n" +
+                "      - \"<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>\"\n" +
                 "    material: GOLD_NUGGET\n" +
                 "    slot: 20\n" +
                 "    price: 1000.0\n" +
@@ -69,12 +69,12 @@ public class ResourceManager {
                 "    name: \"<gradient:#87CEEB:#4682B4>Pacchetto Medio</gradient>\"\n" +
                 "    lore:\n" +
                 "      - \"\"\n" +
-                "      - \"&7Acquista &e500 HiddenCoins\"\n" +
-                "      - \"&7&o(Risparmia il 10%)\"\n" +
+                "      - \"<gradient:#FFFFFF:#E0E0E0>Acquista</gradient> &e500 HiddenCoins\"\n" +
+                "      - \"<gradient:#FFD700:#FFA500>✨ Risparmia il 10% ✨</gradient>\"\n" +
                 "      - \"\"\n" +
-                "      - \"&8► &7Prezzo: &a{price}\"\n" +
+                "      - \"<gradient:#FFD700:#FFA500>► Prezzo:</gradient> &a{price}\"\n" +
                 "      - \"\"\n" +
-                "      - \"&eClicca per acquistare!\"\n" +
+                "      - \"<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>\"\n" +
                 "    material: GOLD_INGOT\n" +
                 "    slot: 22\n" +
                 "    price: 4500.0\n" +
@@ -83,54 +83,54 @@ public class ResourceManager {
                 "    name: \"<gradient:#DA70D6:#8B008B>Pacchetto Grande</gradient>\"\n" +
                 "    lore:\n" +
                 "      - \"\"\n" +
-                "      - \"&7Acquista &e1000 HiddenCoins\"\n" +
-                "      - \"&7&o(Risparmia il 20%)\"\n" +
+                "      - \"<gradient:#FFFFFF:#E0E0E0>Acquista</gradient> &e1000 HiddenCoins\"\n" +
+                "      - \"<gradient:#FFD700:#FFA500>⭐ Risparmia il 20% ⭐</gradient>\"\n" +
                 "      - \"\"\n" +
-                "      - \"&8► &7Prezzo: &a{price}\"\n" +
+                "      - \"<gradient:#FFD700:#FFA500>► Prezzo:</gradient> &a{price}\"\n" +
                 "      - \"\"\n" +
-                "      - \"&eClicca per acquistare!\"\n" +
+                "      - \"<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>\"\n" +
                 "    material: GOLD_BLOCK\n" +
                 "    slot: 24\n" +
                 "    price: 8000.0\n" +
                 "    coins: 1000\n\n" +
                 "shop-items:\n" +
                 "  elite:\n" +
-                "    name: \"<gradient:#FFD700:#FF6347>Ruolo Elite</gradient>\"\n" +
+                "    name: \"<gradient:#FFD700:#FF6347>⚔ Ruolo Elite ⚔</gradient>\"\n" +
                 "    lore:\n" +
                 "      - \"\"\n" +
-                "      - \"&7Ottieni il ruolo &6Elite\"\n" +
-                "      - \"&7nel server!\"\n" +
+                "      - \"<gradient:#FFFFFF:#E0E0E0>Ottieni il ruolo</gradient> &6Elite\"\n" +
+                "      - \"<gradient:#87CEEB:#4682B4>nel server!</gradient>\"\n" +
                 "      - \"\"\n" +
-                "      - \"&8► &7Vantaggi:\"\n" +
-                "      - \"&8• &e/fly &7nel mondo principale\"\n" +
-                "      - \"&8• &eKit Elite &7settimanale\"\n" +
-                "      - \"&8• &eTag speciale &7in chat\"\n" +
+                "      - \"<gradient:#00FF00:#00CC00>▸ Vantaggi:</gradient>\"\n" +
+                "      - \"<gradient:#FFD700:#FFA500>•</gradient> &e/fly <gradient:#808080:#606060>nel mondo principale</gradient>\"\n" +
+                "      - \"<gradient:#FFD700:#FFA500>•</gradient> &eKit Elite <gradient:#808080:#606060>settimanale</gradient>\"\n" +
+                "      - \"<gradient:#FFD700:#FFA500>•</gradient> &eTag speciale <gradient:#808080:#606060>in chat</gradient>\"\n" +
                 "      - \"\"\n" +
-                "      - \"&8► &7Prezzo: &b{price} HiddenCoins\"\n" +
+                "      - \"<gradient:#00BFFF:#0080FF>► Prezzo:</gradient> &b{price} HiddenCoins\"\n" +
                 "      - \"\"\n" +
-                "      - \"&eClicca per acquistare!\"\n" +
+                "      - \"<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>\"\n" +
                 "    material: DIAMOND\n" +
                 "    slot: 30\n" +
                 "    coin-price: 500\n" +
                 "    permission: group.elite\n" +
                 "    command: \"lp user {player} parent add elite\"\n\n" +
                 "  elite-plus:\n" +
-                "    name: \"<gradient:#FF1493:#4B0082>Ruolo Elite+</gradient>\"\n" +
+                "    name: \"<gradient:#FF1493:#4B0082>⚔ Ruolo Elite+ ⚔</gradient>\"\n" +
                 "    lore:\n" +
                 "      - \"\"\n" +
-                "      - \"&7Ottieni il ruolo &dElite+\"\n" +
-                "      - \"&7nel server!\"\n" +
+                "      - \"<gradient:#FFFFFF:#E0E0E0>Ottieni il ruolo</gradient> &dElite+\"\n" +
+                "      - \"<gradient:#FF69B4:#FF1493>nel server!</gradient>\"\n" +
                 "      - \"\"\n" +
-                "      - \"&8► &7Vantaggi:\"\n" +
-                "      - \"&8• &eTutti i vantaggi Elite\"\n" +
-                "      - \"&8• &e/god &7modalità dio\"\n" +
-                "      - \"&8• &eKit Elite+ &7giornaliero\"\n" +
-                "      - \"&8• &eAccesso a &d/warp vip\"\n" +
-                "      - \"&8• &eTag animato &7in chat\"\n" +
+                "      - \"<gradient:#00FF00:#00CC00>▸ Vantaggi:</gradient>\"\n" +
+                "      - \"<gradient:#FF1493:#FF69B4>•</gradient> &eTutti i vantaggi Elite\"\n" +
+                "      - \"<gradient:#FF1493:#FF69B4>•</gradient> &e/god <gradient:#808080:#606060>modalità dio</gradient>\"\n" +
+                "      - \"<gradient:#FF1493:#FF69B4>•</gradient> &eKit Elite+ <gradient:#808080:#606060>giornaliero</gradient>\"\n" +
+                "      - \"<gradient:#FF1493:#FF69B4>•</gradient> &eAccesso a &d/warp vip\"\n" +
+                "      - \"<gradient:#FF1493:#FF69B4>•</gradient> &eTag animato <gradient:#808080:#606060>in chat</gradient>\"\n" +
                 "      - \"\"\n" +
-                "      - \"&8► &7Prezzo: &b{price} HiddenCoins\"\n" +
+                "      - \"<gradient:#00BFFF:#0080FF>► Prezzo:</gradient> &b{price} HiddenCoins\"\n" +
                 "      - \"\"\n" +
-                "      - \"&eClicca per acquistare!\"\n" +
+                "      - \"<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>\"\n" +
                 "    material: NETHERITE_INGOT\n" +
                 "    slot: 32\n" +
                 "    coin-price: 1500\n" +
@@ -160,49 +160,48 @@ public class ResourceManager {
     }
 
     private String getDefaultMessages() {
-        return "prefix: \"<gradient:#FFD700:#FFA500>[HiddenCoins]</gradient> \"\n\n" +
-                "no-permission: \"{prefix}&cNon hai il permesso per eseguire questo comando!\"\n\n" +
+        return "no-permission: \"<gradient:#FF0000:#CC0000>✖ Non hai il permesso per eseguire questo comando!</gradient>\"\n\n" +
                 "gui:\n" +
                 "  info:\n" +
-                "    name: \"<gradient:#00FF00:#00AA00>Le tue Informazioni</gradient>\"\n" +
+                "    name: \"<gradient:#00FF00:#00AA00>✦ Le tue Informazioni ✦</gradient>\"\n" +
                 "    lore: |\n" +
                 "      \n" +
-                "      &8► &7Giocatore: &e{player}\n" +
+                "      <gradient:#FFD700:#FFA500>▸ Giocatore:</gradient> &e{player}\n" +
                 "      \n" +
-                "      &8► &7Saldo: &a{balance}\n" +
-                "      &8► &7HiddenCoins: &b{coins}\n" +
+                "      <gradient:#00FF00:#00CC00>▸ Saldo:</gradient> &a{balance}\n" +
+                "      <gradient:#00BFFF:#0080FF>▸ HiddenCoins:</gradient> &b{coins}\n" +
                 "      \n" +
                 "      &7Usa le tue coins per\n" +
                 "      &7acquistare oggetti speciali!\n\n" +
                 "purchase:\n" +
                 "  coins:\n" +
-                "    success: \"{prefix}&aHai acquistato con successo &e{amount} HiddenCoins &aper &2{price}&a!\"\n" +
-                "    insufficient-money: \"{prefix}&cNon hai abbastanza soldi per questo acquisto!\"\n\n" +
+                "    success: \"<gradient:#00FF00:#00CC00>✔ Hai acquistato con successo</gradient> &e{amount} HiddenCoins <gradient:#00FF00:#00CC00>per</gradient> &2{price}<gradient:#00FF00:#00CC00>!</gradient>\"\n" +
+                "    insufficient-money: \"<gradient:#FF0000:#CC0000>✖ Non hai abbastanza soldi per questo acquisto!</gradient>\"\n\n" +
                 "  item:\n" +
-                "    success: \"{prefix}&aHai acquistato con successo &e{item} &aper &b{price} HiddenCoins&a!\"\n" +
-                "    insufficient-coins: \"{prefix}&cNon hai abbastanza HiddenCoins per questo acquisto!\"\n" +
-                "    already-owned: \"{prefix}&cPossiedi già questo oggetto!\"\n\n" +
+                "    success: \"<gradient:#00FF00:#00CC00>✔ Hai acquistato con successo</gradient> &e{item} <gradient:#00FF00:#00CC00>per</gradient> &b{price} HiddenCoins<gradient:#00FF00:#00CC00>!</gradient>\"\n" +
+                "    insufficient-coins: \"<gradient:#FF0000:#CC0000>✖ Non hai abbastanza HiddenCoins per questo acquisto!</gradient>\"\n" +
+                "    already-owned: \"<gradient:#FF0000:#CC0000>✖ Possiedi già questo oggetto!</gradient>\"\n\n" +
                 "errors:\n" +
-                "  player-only: \"&cQuesto comando può essere eseguito solo da un giocatore!\"\n" +
-                "  invalid-amount: \"{prefix}&cImporto non valido! Usa un numero positivo.\"\n" +
-                "  player-not-found: \"{prefix}&cGiocatore non trovato!\"\n" +
-                "  invalid-syntax: \"{prefix}&cSintassi non valida! Usa: {syntax}\"\n\n" +
+                "  player-only: \"<gradient:#FF0000:#CC0000>✖ Questo comando può essere eseguito solo da un giocatore!</gradient>\"\n" +
+                "  invalid-amount: \"<gradient:#FF0000:#CC0000>✖ Importo non valido! Usa un numero positivo.</gradient>\"\n" +
+                "  player-not-found: \"<gradient:#FF0000:#CC0000>✖ Giocatore non trovato!</gradient>\"\n" +
+                "  invalid-syntax: \"<gradient:#FF0000:#CC0000>✖ Sintassi non valida! Usa: {syntax}</gradient>\"\n\n" +
                 "admin:\n" +
                 "  reload:\n" +
-                "    success: \"{prefix}&aConfigurazione ricaricata con successo!\"\n\n" +
+                "    success: \"<gradient:#00FF00:#00CC00>✔ Configurazione ricaricata con successo!</gradient>\"\n\n" +
                 "  coins:\n" +
-                "    set: \"{prefix}&aHai impostato le HiddenCoins di &e{player} &aa &b{amount}&a!\"\n" +
-                "    add: \"{prefix}&aHai aggiunto &b{amount} HiddenCoins &aa &e{player}&a!\"\n" +
-                "    remove: \"{prefix}&aHai rimosso &b{amount} HiddenCoins &ada &e{player}&a!\"\n" +
-                "    check: \"{prefix}&e{player} &7ha &b{amount} HiddenCoins&7!\"\n\n" +
+                "    set: \"<gradient:#00FF00:#00CC00>✔ Hai impostato le HiddenCoins di</gradient> &e{player} <gradient:#00FF00:#00CC00>a</gradient> &b{amount}<gradient:#00FF00:#00CC00>!</gradient>\"\n" +
+                "    add: \"<gradient:#00FF00:#00CC00>✔ Hai aggiunto</gradient> &b{amount} HiddenCoins <gradient:#00FF00:#00CC00>a</gradient> &e{player}<gradient:#00FF00:#00CC00>!</gradient>\"\n" +
+                "    remove: \"<gradient:#00FF00:#00CC00>✔ Hai rimosso</gradient> &b{amount} HiddenCoins <gradient:#00FF00:#00CC00>da</gradient> &e{player}<gradient:#00FF00:#00CC00>!</gradient>\"\n" +
+                "    check: \"<gradient:#FFD700:#FFA500>▸</gradient> &e{player} <gradient:#FFD700:#FFA500>ha</gradient> &b{amount} HiddenCoins<gradient:#FFD700:#FFA500>!</gradient>\"\n\n" +
                 "  reset:\n" +
-                "    success: \"{prefix}&aHai resettato le HiddenCoins di &e{player}&a!\"\n" +
-                "    all: \"{prefix}&aHai resettato le HiddenCoins di tutti i giocatori!\"\n\n" +
+                "    success: \"<gradient:#00FF00:#00CC00>✔ Hai resettato le HiddenCoins di</gradient> &e{player}<gradient:#00FF00:#00CC00>!</gradient>\"\n" +
+                "    all: \"<gradient:#00FF00:#00CC00>✔ Hai resettato le HiddenCoins di tutti i giocatori!</gradient>\"\n\n" +
                 "notifications:\n" +
-                "  coins-received: \"{prefix}&aHai ricevuto &b{amount} HiddenCoins&a!\"\n" +
-                "  coins-removed: \"{prefix}&cTi sono state rimosse &b{amount} HiddenCoins&c!\"\n\n" +
+                "  coins-received: \"<gradient:#00FF00:#00CC00>✔ Hai ricevuto</gradient> &b{amount} HiddenCoins<gradient:#00FF00:#00CC00>!</gradient>\"\n" +
+                "  coins-removed: \"<gradient:#FF0000:#CC0000>✖ Ti sono state rimosse</gradient> &b{amount} HiddenCoins<gradient:#FF0000:#CC0000>!</gradient>\"\n\n" +
                 "confirmations:\n" +
-                "  purchase: \"&7Sei sicuro di voler acquistare &e{item}&7? &a[CONFERMA] &c[ANNULLA]\"\n" +
-                "  reset: \"&cSei sicuro di voler resettare le tue HiddenCoins? Questa azione è irreversibile!\"\n";
+                "  purchase: \"<gradient:#FFD700:#FFA500>⚠ Sei sicuro di voler acquistare</gradient> &e{item}<gradient:#FFD700:#FFA500>?</gradient> &a[CONFERMA] &c[ANNULLA]\"\n" +
+                "  reset: \"<gradient:#FF0000:#CC0000>⚠ Sei sicuro di voler resettare le tue HiddenCoins? Questa azione è irreversibile!</gradient>\"\n";
     }
 }

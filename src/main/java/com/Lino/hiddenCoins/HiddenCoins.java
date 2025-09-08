@@ -41,7 +41,9 @@ public final class HiddenCoins extends JavaPlugin {
 
         coinsManager = new CoinsManager(this);
 
-        getCommand("negozio").setExecutor(new NegozioCommand(this));
+        NegozioCommand negozioCommand = new NegozioCommand(this);
+        negozioCommand.setupListener();
+        getCommand("negozio").setExecutor(negozioCommand);
 
         getLogger().info("HiddenCoins abilitato con successo!");
     }

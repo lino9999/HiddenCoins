@@ -1,54 +1,52 @@
-prefix: "<gradient:#FFD700:#FFA500>[HiddenCoins]</gradient> "
-
-no-permission: "{prefix}&cNon hai il permesso per eseguire questo comando!"
+no-permission: "<gradient:#FF0000:#CC0000>✖ Non hai il permesso per eseguire questo comando!</gradient>"
 
 gui:
   info:
-    name: "<gradient:#00FF00:#00AA00>Le tue Informazioni</gradient>"
+    name: "<gradient:#00FF00:#00AA00>✦ Le tue Informazioni ✦</gradient>"
     lore: |
       
-      &8► &7Giocatore: &e{player}
+      <gradient:#FFD700:#FFA500>▸ Giocatore:</gradient> &e{player}
       
-      &8► &7Saldo: &a{balance}
-      &8► &7HiddenCoins: &b{coins}
+      <gradient:#00FF00:#00CC00>▸ Saldo:</gradient> &a{balance}
+      <gradient:#00BFFF:#0080FF>▸ HiddenCoins:</gradient> &b{coins}
       
       &7Usa le tue coins per
       &7acquistare oggetti speciali!
 
 purchase:
   coins:
-    success: "{prefix}&aHai acquistato con successo &e{amount} HiddenCoins &aper &2{price}&a!"
-    insufficient-money: "{prefix}&cNon hai abbastanza soldi per questo acquisto!"
+    success: "<gradient:#00FF00:#00CC00>✔ Hai acquistato con successo</gradient> &e{amount} HiddenCoins <gradient:#00FF00:#00CC00>per</gradient> &2{price}<gradient:#00FF00:#00CC00>!</gradient>"
+    insufficient-money: "<gradient:#FF0000:#CC0000>✖ Non hai abbastanza soldi per questo acquisto!</gradient>"
 
   item:
-    success: "{prefix}&aHai acquistato con successo &e{item} &aper &b{price} HiddenCoins&a!"
-    insufficient-coins: "{prefix}&cNon hai abbastanza HiddenCoins per questo acquisto!"
-    already-owned: "{prefix}&cPossiedi già questo oggetto!"
+    success: "<gradient:#00FF00:#00CC00>✔ Hai acquistato con successo</gradient> &e{item} <gradient:#00FF00:#00CC00>per</gradient> &b{price} HiddenCoins<gradient:#00FF00:#00CC00>!</gradient>"
+    insufficient-coins: "<gradient:#FF0000:#CC0000>✖ Non hai abbastanza HiddenCoins per questo acquisto!</gradient>"
+    already-owned: "<gradient:#FF0000:#CC0000>✖ Possiedi già questo oggetto!</gradient>"
 
 errors:
-  player-only: "&cQuesto comando può essere eseguito solo da un giocatore!"
-  invalid-amount: "{prefix}&cImporto non valido! Usa un numero positivo."
-  player-not-found: "{prefix}&cGiocatore non trovato!"
-  invalid-syntax: "{prefix}&cSintassi non valida! Usa: {syntax}"
+  player-only: "<gradient:#FF0000:#CC0000>✖ Questo comando può essere eseguito solo da un giocatore!</gradient>"
+  invalid-amount: "<gradient:#FF0000:#CC0000>✖ Importo non valido! Usa un numero positivo.</gradient>"
+  player-not-found: "<gradient:#FF0000:#CC0000>✖ Giocatore non trovato!</gradient>"
+  invalid-syntax: "<gradient:#FF0000:#CC0000>✖ Sintassi non valida! Usa: {syntax}</gradient>"
 
 admin:
   reload:
-    success: "{prefix}&aConfigurazione ricaricata con successo!"
+    success: "<gradient:#00FF00:#00CC00>✔ Configurazione ricaricata con successo!</gradient>"
 
   coins:
-    set: "{prefix}&aHai impostato le HiddenCoins di &e{player} &aa &b{amount}&a!"
-    add: "{prefix}&aHai aggiunto &b{amount} HiddenCoins &aa &e{player}&a!"
-    remove: "{prefix}&aHai rimosso &b{amount} HiddenCoins &ada &e{player}&a!"
-    check: "{prefix}&e{player} &7ha &b{amount} HiddenCoins&7!"
+    set: "<gradient:#00FF00:#00CC00>✔ Hai impostato le HiddenCoins di</gradient> &e{player} <gradient:#00FF00:#00CC00>a</gradient> &b{amount}<gradient:#00FF00:#00CC00>!</gradient>"
+    add: "<gradient:#00FF00:#00CC00>✔ Hai aggiunto</gradient> &b{amount} HiddenCoins <gradient:#00FF00:#00CC00>a</gradient> &e{player}<gradient:#00FF00:#00CC00>!</gradient>"
+    remove: "<gradient:#00FF00:#00CC00>✔ Hai rimosso</gradient> &b{amount} HiddenCoins <gradient:#00FF00:#00CC00>da</gradient> &e{player}<gradient:#00FF00:#00CC00>!</gradient>"
+    check: "<gradient:#FFD700:#FFA500>▸</gradient> &e{player} <gradient:#FFD700:#FFA500>ha</gradient> &b{amount} HiddenCoins<gradient:#FFD700:#FFA500>!</gradient>"
 
   reset:
-    success: "{prefix}&aHai resettato le HiddenCoins di &e{player}&a!"
-    all: "{prefix}&aHai resettato le HiddenCoins di tutti i giocatori!"
+    success: "<gradient:#00FF00:#00CC00>✔ Hai resettato le HiddenCoins di</gradient> &e{player}<gradient:#00FF00:#00CC00>!</gradient>"
+    all: "<gradient:#00FF00:#00CC00>✔ Hai resettato le HiddenCoins di tutti i giocatori!</gradient>"
 
 notifications:
-  coins-received: "{prefix}&aHai ricevuto &b{amount} HiddenCoins&a!"
-  coins-removed: "{prefix}&cTi sono state rimosse &b{amount} HiddenCoins&c!"
+  coins-received: "<gradient:#00FF00:#00CC00>✔ Hai ricevuto</gradient> &b{amount} HiddenCoins<gradient:#00FF00:#00CC00>!</gradient>"
+  coins-removed: "<gradient:#FF0000:#CC0000>✖ Ti sono state rimosse</gradient> &b{amount} HiddenCoins<gradient:#FF0000:#CC0000>!</gradient>"
 
 confirmations:
-  purchase: "&7Sei sicuro di voler acquistare &e{item}&7? &a[CONFERMA] &c[ANNULLA]"
-  reset: "&cSei sicuro di voler resettare le tue HiddenCoins? Questa azione è irreversibile!"
+  purchase: "<gradient:#FFD700:#FFA500>⚠ Sei sicuro di voler acquistare</gradient> &e{item}<gradient:#FFD700:#FFA500>?</gradient> &a[CONFERMA] &c[ANNULLA]"
+  reset: "<gradient:#FF0000:#CC0000>⚠ Sei sicuro di voler resettare le tue HiddenCoins? Questa azione è irreversibile!</gradient>"

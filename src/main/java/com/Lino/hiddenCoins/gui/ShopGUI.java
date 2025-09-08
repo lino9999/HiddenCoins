@@ -39,10 +39,17 @@ public class ShopGUI {
     }
 
     private void setupGUI() {
+        inventory.clear();
+        items.clear();
+
         fillBackground();
         addCoinPackages();
         addShopItems();
         addInfoItem();
+    }
+
+    public void refresh() {
+        setupGUI();
     }
 
     private void fillBackground() {
@@ -58,9 +65,7 @@ public class ShopGUI {
         }
 
         for (int i = 0; i < inventory.getSize(); i++) {
-            if (inventory.getItem(i) == null) {
-                inventory.setItem(i, decoration);
-            }
+            inventory.setItem(i, decoration);
         }
     }
 
@@ -159,7 +164,9 @@ public class ShopGUI {
 
     public void handleClick(int slot) {
         if (!items.containsKey(slot)) {
-            playSound("error");
+            if (slot != 49) {
+                playSound("error");
+            }
             return;
         }
 
@@ -181,8 +188,7 @@ public class ShopGUI {
             plugin.getMessageManager().sendMessage(player, "purchase.coins.success", placeholders);
             playSound("success");
 
-            player.closeInventory();
-            new ShopGUI(plugin, player).open();
+            refresh();
         } else {
             plugin.getMessageManager().sendMessage(player, "purchase.coins.insufficient-money");
             playSound("error");
@@ -208,8 +214,7 @@ public class ShopGUI {
             plugin.getMessageManager().sendMessage(player, "purchase.item.success", placeholders);
             playSound("success");
 
-            player.closeInventory();
-            new ShopGUI(plugin, player).open();
+            refresh();
         } else {
             plugin.getMessageManager().sendMessage(player, "purchase.item.insufficient-coins");
             playSound("error");

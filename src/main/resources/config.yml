@@ -1,5 +1,5 @@
 gui:
-  title: "<gradient:#FFD700:#FFA500>Negozio HiddenCoins</gradient>"
+  title: "<gradient:#FFD700:#FFA500>✨ Negozio HiddenCoins ✨</gradient>"
   size: 54
   decoration:
     material: BLACK_STAINED_GLASS_PANE
@@ -10,11 +10,11 @@ coin-packages:
     name: "<gradient:#90EE90:#32CD32>Pacchetto Piccolo</gradient>"
     lore:
       - ""
-      - "&7Acquista &e100 HiddenCoins"
+      - "<gradient:#FFFFFF:#E0E0E0>Acquista</gradient> &e100 HiddenCoins"
       - ""
-      - "&8► &7Prezzo: &a{price}"
+      - "<gradient:#FFD700:#FFA500>► Prezzo:</gradient> &a{price}"
       - ""
-      - "&eClicca per acquistare!"
+      - "<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>"
     material: GOLD_NUGGET
     slot: 20
     price: 1000.0
@@ -24,12 +24,12 @@ coin-packages:
     name: "<gradient:#87CEEB:#4682B4>Pacchetto Medio</gradient>"
     lore:
       - ""
-      - "&7Acquista &e500 HiddenCoins"
-      - "&7&o(Risparmia il 10%)"
+      - "<gradient:#FFFFFF:#E0E0E0>Acquista</gradient> &e500 HiddenCoins"
+      - "<gradient:#FFD700:#FFA500>✨ Risparmia il 10% ✨</gradient>"
       - ""
-      - "&8► &7Prezzo: &a{price}"
+      - "<gradient:#FFD700:#FFA500>► Prezzo:</gradient> &a{price}"
       - ""
-      - "&eClicca per acquistare!"
+      - "<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>"
     material: GOLD_INGOT
     slot: 22
     price: 4500.0
@@ -39,12 +39,12 @@ coin-packages:
     name: "<gradient:#DA70D6:#8B008B>Pacchetto Grande</gradient>"
     lore:
       - ""
-      - "&7Acquista &e1000 HiddenCoins"
-      - "&7&o(Risparmia il 20%)"
+      - "<gradient:#FFFFFF:#E0E0E0>Acquista</gradient> &e1000 HiddenCoins"
+      - "<gradient:#FFD700:#FFA500>⭐ Risparmia il 20% ⭐</gradient>"
       - ""
-      - "&8► &7Prezzo: &a{price}"
+      - "<gradient:#FFD700:#FFA500>► Prezzo:</gradient> &a{price}"
       - ""
-      - "&eClicca per acquistare!"
+      - "<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>"
     material: GOLD_BLOCK
     slot: 24
     price: 8000.0
@@ -52,20 +52,20 @@ coin-packages:
 
 shop-items:
   elite:
-    name: "<gradient:#FFD700:#FF6347>Ruolo Elite</gradient>"
+    name: "<gradient:#FFD700:#FF6347>⚔ Ruolo Elite ⚔</gradient>"
     lore:
       - ""
-      - "&7Ottieni il ruolo &6Elite"
-      - "&7nel server!"
+      - "<gradient:#FFFFFF:#E0E0E0>Ottieni il ruolo</gradient> &6Elite"
+      - "<gradient:#87CEEB:#4682B4>nel server!</gradient>"
       - ""
-      - "&8► &7Vantaggi:"
-      - "&8• &e/fly &7nel mondo principale"
-      - "&8• &eKit Elite &7settimanale"
-      - "&8• &eTag speciale &7in chat"
+      - "<gradient:#00FF00:#00CC00>▸ Vantaggi:</gradient>"
+      - "<gradient:#FFD700:#FFA500>•</gradient> &e/fly <gradient:#808080:#606060>nel mondo principale</gradient>"
+      - "<gradient:#FFD700:#FFA500>•</gradient> &eKit Elite <gradient:#808080:#606060>settimanale</gradient>"
+      - "<gradient:#FFD700:#FFA500>•</gradient> &eTag speciale <gradient:#808080:#606060>in chat</gradient>"
       - ""
-      - "&8► &7Prezzo: &b{price} HiddenCoins"
+      - "<gradient:#00BFFF:#0080FF>► Prezzo:</gradient> &b{price} HiddenCoins"
       - ""
-      - "&eClicca per acquistare!"
+      - "<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>"
     material: DIAMOND
     slot: 30
     coin-price: 500
@@ -73,22 +73,22 @@ shop-items:
     command: "lp user {player} parent add elite"
 
   elite-plus:
-    name: "<gradient:#FF1493:#4B0082>Ruolo Elite+</gradient>"
+    name: "<gradient:#FF1493:#4B0082>⚔ Ruolo Elite+ ⚔</gradient>"
     lore:
       - ""
-      - "&7Ottieni il ruolo &dElite+"
-      - "&7nel server!"
+      - "<gradient:#FFFFFF:#E0E0E0>Ottieni il ruolo</gradient> &dElite+"
+      - "<gradient:#FF69B4:#FF1493>nel server!</gradient>"
       - ""
-      - "&8► &7Vantaggi:"
-      - "&8• &eTutti i vantaggi Elite"
-      - "&8• &e/god &7modalità dio"
-      - "&8• &eKit Elite+ &7giornaliero"
-      - "&8• &eAccesso a &d/warp vip"
-      - "&8• &eTag animato &7in chat"
+      - "<gradient:#00FF00:#00CC00>▸ Vantaggi:</gradient>"
+      - "<gradient:#FF1493:#FF69B4>•</gradient> &eTutti i vantaggi Elite"
+      - "<gradient:#FF1493:#FF69B4>•</gradient> &e/god <gradient:#808080:#606060>modalità dio</gradient>"
+      - "<gradient:#FF1493:#FF69B4>•</gradient> &eKit Elite+ <gradient:#808080:#606060>giornaliero</gradient>"
+      - "<gradient:#FF1493:#FF69B4>•</gradient> &eAccesso a &d/warp vip"
+      - "<gradient:#FF1493:#FF69B4>•</gradient> &eTag animato <gradient:#808080:#606060>in chat</gradient>"
       - ""
-      - "&8► &7Prezzo: &b{price} HiddenCoins"
+      - "<gradient:#00BFFF:#0080FF>► Prezzo:</gradient> &b{price} HiddenCoins"
       - ""
-      - "&eClicca per acquistare!"
+      - "<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>"
     material: NETHERITE_INGOT
     slot: 32
     coin-price: 1500
@@ -96,30 +96,30 @@ shop-items:
     command: "lp user {player} parent add eliteplus"
 
   fly-30days:
-    name: "<gradient:#87CEEB:#00BFFF>Fly 30 Giorni</gradient>"
+    name: "<gradient:#87CEEB:#00BFFF>☁ Fly 30 Giorni ☁</gradient>"
     lore:
       - ""
-      - "&7Ottieni il permesso di volo"
-      - "&7per &b30 giorni!"
+      - "<gradient:#FFFFFF:#E0E0E0>Ottieni il permesso di volo</gradient>"
+      - "<gradient:#87CEEB:#00BFFF>per 30 giorni!</gradient>"
       - ""
-      - "&8► &7Prezzo: &b{price} HiddenCoins"
+      - "<gradient:#00BFFF:#0080FF>► Prezzo:</gradient> &b{price} HiddenCoins"
       - ""
-      - "&eClicca per acquistare!"
+      - "<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>"
     material: FEATHER
     slot: 39
     coin-price: 300
     command: "lp user {player} permission settemp essentials.fly true 30d"
 
   special-key:
-    name: "<gradient:#FF69B4:#FF1493>Chiave Speciale</gradient>"
+    name: "<gradient:#FF69B4:#FF1493>🔑 Chiave Speciale 🔑</gradient>"
     lore:
       - ""
-      - "&7Ottieni una &dChiave Speciale"
-      - "&7per aprire casse rare!"
+      - "<gradient:#FFFFFF:#E0E0E0>Ottieni una</gradient> &dChiave Speciale"
+      - "<gradient:#FF69B4:#FF1493>per aprire casse rare!</gradient>"
       - ""
-      - "&8► &7Prezzo: &b{price} HiddenCoins"
+      - "<gradient:#00BFFF:#0080FF>► Prezzo:</gradient> &b{price} HiddenCoins"
       - ""
-      - "&eClicca per acquistare!"
+      - "<gradient:#00FF00:#00CC00>✦ Clicca per acquistare! ✦</gradient>"
     material: TRIPWIRE_HOOK
     slot: 41
     coin-price: 200
